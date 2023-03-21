@@ -4,6 +4,12 @@ import '../model/contact.dart';
 import '../model/get_contact.dart';
 
 class CreateNewContact extends StatefulWidget {
+  /// Activate this code to use SetState
+  // final List<GetContact> contactList;
+  // const CreateNewContact({Key? key, required this.contactList})
+  //     : super(key: key);
+
+  ///Using Provider
   const CreateNewContact({Key? key}) : super(key: key);
 
   @override
@@ -104,6 +110,7 @@ class _CreateNewContactState extends State<CreateNewContact> {
                         // widget.contactList.add(GetContact(
                         //     name: nameController.text,
                         //     phone: phoneController.text));
+                        // Navigator.pop(context, widget.contactList);
 
                         /// Code Using Provider (Add new contact and return to list in Contact Page)
                         contactProvider.add(GetContact(
